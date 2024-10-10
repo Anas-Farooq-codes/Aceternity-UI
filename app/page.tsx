@@ -2,6 +2,7 @@ import { navItems } from "@/data";
 import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/Ui/FloatingNavbar";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <FloatingNav navItems={navItems}/>
       <Hero/>
       <Experience/>
+      <RecentProjects/>
     </main>
   );
 }

@@ -52,3 +52,34 @@ export const workExperience = [
         thumbnail: "/06.svg",
     },
 ] 
+
+export const projects = [
+    {
+        id: 1,
+        title: "AI-Powered Smart Home",
+        des: "Discover the future of home automation with AI-powered devices.",
+        img: "/project-1.jpg",
+        link: "https://smarthome.ai.com",
+    },
+    {
+        id: 2,
+        title: "Next-Gen VR Headsets",
+        des: "Step into immersive worlds with cutting-edge VR headsets.",
+        img: "/project-2.jpg",
+        link: "https://vrfuture.com",
+    },
+    {
+        id: 3,
+        title: "Quantum Computing Revolution",
+        des: "Unleashing the power of quantum computing to solve complex problems.",
+        img: "/project-3.jpg",
+        link: "https://quantumrevolution.com",
+    },
+    {
+        id: 4,
+        title: "Blockchain for Secure Data",
+        des: "How blockchain is reshaping data security across industries.",
+        img: "/project-4.jpg",
+        link: "https://blockchainsecure.com",
+    }
+];
