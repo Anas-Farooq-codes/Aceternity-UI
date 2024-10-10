@@ -1,3 +1,13 @@
+export const navItems = [
+
+{ name: "Home", link: "#Home"},
+{ name: "Experience", link: "#experience"},
+{ name: "Projects", link: "#projects"},
+{ name: "Approach", link: "#approach"},
+{ name: "Gallery", link: "#gallery"},
+
+]
+
 export const workExperience = [
     {
         id: 1,

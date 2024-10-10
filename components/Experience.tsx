@@ -14,12 +14,19 @@ const Experience = () => {
     workExperience.map((card) =>  (
         <Button
         key={card.id}
+        borderRadius='1.75rem'
+        duration={Math.floor(Math.random() * 10000) + 10000}
+        style={{
+            background: "rgb(0, 0, 0)",
+            borderRadius: `calc(1.75rem* 0.96)`,
+        }}
+        className='flex-1 text-white'
         >
-            <div>
+            <div className='flex flex-col items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
                 <img src={card.thumbnail} alt={card.thumbnail} className='w-16 text-center' />
             </div>
-            <h1>{card.title}</h1>
-            <p>{card.desc}</p>
+            <h1 className='text-xl md:text-2xl font-bold'>{card.title}</h1>
+            <p className='text-white-100 mt03 font-semibold'>{card.desc}</p>
         </Button>
     ))
 }
