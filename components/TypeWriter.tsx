@@ -20,7 +20,7 @@ export function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[40rem]  ">
+    <div className="flex flex-col items-center justify-center">
       <TypewriterEffectSmooth words={words} />
    
     </div>

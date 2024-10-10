@@ -55,7 +55,7 @@ export const TypewriterEffect = ({
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    ` text-black opacity-0 hidden`,
+                    ` text-white opacity-0 hidden`,
                     word.className
                   )}
                 >
@@ -72,7 +72,7 @@ export const TypewriterEffect = ({
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
         className
       )}
     >
@@ -126,7 +126,7 @@ export const TypewriterEffectSmooth = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}
+                  className={cn(`text-white`, word.className)}
                 >
                   {char}
                 </span>
@@ -178,7 +178,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-violet-500",
           cursorClassName
         )}
       ></motion.span>

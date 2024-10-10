@@ -1,6 +1,8 @@
 import React from 'react'
+import { FaLocationCrosshairs } from 'react-icons/fa6'
 import { Spotlight } from './Ui/Spotlight'
 import { SparklesPreview } from './SparklesPreview'
+import  MagicButton  from './MagicButton'
 
 function Hero() {
   return (
@@ -12,12 +14,28 @@ function Hero() {
             />
                 <Spotlight className='h-[80vh] w-[50vw] top=10 left-full' fill='purple'/>
                 <Spotlight className='left-80 top-28 h-[80vh] w-[50vw]' fill='blue'/>
+
+                {/* {Background Grid} */}
+                <div className='w-full absolute z-59 left-0 -top-72'>
+                  <img src="/footer-grid.svg" alt="grid" className='w-full h-full opacity-50' />
+                </div>
         </div>
 
-        <div>
-            <div>
+        <div className='flex justify-center relative my-20 z-10'> 
+            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                 {/* {Spark Preview} */}
                 <SparklesPreview/>
+
+                {/**Magic Button */}
+
+               <div className='mt-6'>
+                <a href="#about">
+                <MagicButton
+                icon={<FaLocationCrosshairs/>}
+                title='Show My Skills'
+                position='right'/>
+                </a>
+               </div>
             </div>
         </div>
     </section>
