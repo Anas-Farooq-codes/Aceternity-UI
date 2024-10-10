@@ -15,7 +15,8 @@ Projects
       {
         projects.map((item) => (
           <div className='flex items-center justify-center sm:w-96 w-[80vw]' key={item.id}>
-          <PinContainer>
+          <PinContainer title='aceternity Ui'
+          href='https://ui.aceternity.com/'>
             <div className='flex basis-full flex-col p-4 tracking-tight sm:basis-1/2 w-[20rem] h-[20rem]'>
               <h3 className='max-w-xs !pb-2 !m-0 font-bold text-slate-100'>{item.title}</h3>
                <div>
