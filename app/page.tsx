@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/Ui/FloatingNavbar";
 import RecentProjects from "@/components/RecentProjects";
+import { FeaturesSectionDemo } from "@/components/FeaturesSectionDemo";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero/>
       <Experience/>
       <RecentProjects/>
+      <FeaturesSectionDemo/>
     </main>
   );
 }
