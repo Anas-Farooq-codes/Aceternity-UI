@@ -108,6 +108,6 @@ const Feature = ({
       <p className="text-sm text-white/70 max-w-xs relative z-10 px-10">
         {description}
       </p>
-    </div>
+    </div> 
   );
 };
