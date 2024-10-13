@@ -5,6 +5,7 @@ import { FloatingNav } from "@/components/Ui/FloatingNavbar";
 import RecentProjects from "@/components/RecentProjects";
 import { FeaturesSectionDemo } from "@/components/FeaturesSectionDemo";
 import { CanvasRevealEffectDemo } from "@/components/CanvasRevealEffectDemo";
+import  Clients from "@/components/Clients";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <RecentProjects/>
       <FeaturesSectionDemo/>
       <CanvasRevealEffectDemo/>
+      <Clients/>
     </main>
   );
 }
