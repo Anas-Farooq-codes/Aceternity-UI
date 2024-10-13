@@ -6,6 +6,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { FeaturesSectionDemo } from "@/components/FeaturesSectionDemo";
 import { CanvasRevealEffectDemo } from "@/components/CanvasRevealEffectDemo";
 import  Clients from "@/components/Clients";
+import {LayoutGridDemo} from "@/components/LayoutGridDemo";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FeaturesSectionDemo/>
       <CanvasRevealEffectDemo/>
       <Clients/>
+      <LayoutGridDemo/>
     </main>
   );
 }
