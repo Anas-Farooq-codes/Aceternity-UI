@@ -66,18 +66,18 @@ export const FloatingNav = ({
             border: "1px solid rgba(255, 255, 255, 0.525)"
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative items-center flex space-x-1 text-white/80 hover:text-white transition-all"
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
-        ))}
+        {navItems.map((navItem, idx) => (
+  <Link
+    key={`link-${idx}`}
+    href={navItem.link}
+    className={cn(
+      "relative items-center flex space-x-1 text-white/80 hover:text-white transition-all"
+    )}
+  >
+    <span className="block">{navItem.icon}</span>
+    <span className="text-[10px] leading-18 sm:text-sm">{navItem.name}</span>
+  </Link>
+))}
        
       </motion.div>
     </AnimatePresence>

@@ -4,7 +4,8 @@ export const navItems = [
 { name: "Experience", link: "#experience"},
 { name: "Projects", link: "#projects"},
 { name: "Approach", link: "#approach"},
-{ name: "Gallery", link: "#gallery"},
+{ name: "Testimonials", link: "#testimonials"},
+{ name: "Domains", link: "#gallery"},
 
 ]
 
@@ -140,3 +141,22 @@ export const testimonials = [
         image: "/stack-9.png"
     }
 ];
+
+export const socialIcons = [
+
+{
+id: 1,
+img:"/git.svg",
+link: "https://github.com/Anas-Farooq-codes"
+},
+{
+    id: 2,
+    img: "/discord.svg",
+    link: "https://discord.gg/FGunPKZUp3"
+},
+{
+    id: 1,
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/anas-farooq06/"
+},
+]
