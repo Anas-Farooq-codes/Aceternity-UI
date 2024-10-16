@@ -14,7 +14,7 @@ export function CanvasRevealEffectDemo() {
 
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
 
-<Card title="User-Centered Design" icon={<AceternityIcon  order="UI 1"/>} des="Always prioritize the user's needs and create interfaces that are intuitive and easy to navigate.">
+<Card title="User-Centered Design" icon={<AceternityIcon/>} des="Always prioritize the user's needs and create interfaces that are intuitive and easy to navinpm run lintgate.">
 <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-teal-900 overflow-hidden"
@@ -23,7 +23,7 @@ export function CanvasRevealEffectDemo() {
 
 
 
-<Card title="Responsive Design" icon={<AceternityIcon order="UI 3" />} des="Ensure that your designs look and function well across different devices and screen sizes.
+<Card title="Responsive Design" icon={<AceternityIcon />} des="Ensure that your designs look and function well across different devices and screen sizes.
 ">
 <CanvasRevealEffect
             animationSpeed={3}
@@ -36,7 +36,7 @@ export function CanvasRevealEffectDemo() {
           />
 </Card>
 
-<Card title="Accessibility" icon={<AceternityIcon order="UI 2" />} des="Make your UI accessible to everyone, including users with disabilities.">
+<Card title="Accessibility" icon={<AceternityIcon />} des="Make your UI accessible to everyone, including users with disabilities.">
 <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600 overflow-hidden"
@@ -104,7 +104,7 @@ const Card = ({
   );
 };
 
-const AceternityIcon = ({ order } : {order: string}) => {
+const AceternityIcon = () => {
   return (
     <svg
       width="66"
@@ -112,7 +112,7 @@ const AceternityIcon = ({ order } : {order: string}) => {
       viewBox="0 0 66 65"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-white  group-hover/canvas-card:text-white "
+      className="h-10 w-10 text-white group-hover/canvas-card:text-white"
     >
       <path
         d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
@@ -126,7 +126,10 @@ const AceternityIcon = ({ order } : {order: string}) => {
   );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({
+  className,
+  ...rest
+}: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +138,7 @@ export const Icon = ({ className, ...rest }: any) => {
       strokeWidth="1.5"
       stroke="currentColor"
       className={className}
-      {...rest}
+      {...rest} // Spread the rest of the props
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>
